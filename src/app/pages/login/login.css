@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@layer components {
+.v-xs{
+  @apply
+    flex-col
+    bg-[url(/assets/img/fondo.jpg)] 
+    dark:bg-amber-700
+}
+.v-sm{
+  @apply sm:bg-[url(/assets/img/fondo.jpg)] 
+  sm:dark:bg-blue-950  sm:dark:flex-col 
+}
+.v-md{
+  @apply md:bg-[url(/assets/img/md-fdo.jpg)] 
+  dark:md:bg-blue-700 dark:md:flex-row
+}
+.v-lg{
+  @apply xl:bg-[url(/assets/img/lg-fondo.jpg)] dark:xl:bg-blue-800 
+}
+.v-xl{
+  @apply 2xl:bg-[url(/assets/img/xl-fondo.jpg)] dark:2xl:bg-blue-100
+}
+}
