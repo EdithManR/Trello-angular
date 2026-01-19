@@ -2,3 +2,36 @@
   <div class=" min-h-3.5 min-w-2/4"> <h1 class="text-black text-7xl">logo</h1></div>
   <div class=" min-h-3.5 min-w-2/4"> <h2 class="text-white text-4xl">Form</h2> </div>
 </div>
+<p>Users:</p>
+
+
+
+@for (user of userService.users;track $index){
+    
+
+    @if (user.name===this.userName&&user.email===userEmail){
+
+    <p>{{user.name}}</p>
+    <p>{{user.email}}</p>
+    }@else(){
+      <p> No existe el usuario</p>
+    }
+  }
+<!--<ul class="user-list">
+  @for (user of userService.users;track $index){
+    
+
+      <li>
+      <a [routerLink]="user.id">
+        <h2>{{$index + 1}}</h2>
+         <h2>{{user.name}}</h2>
+      </a>
+    </li>
+    <p>{{user.id}}</p>
+    
+  }
+
+</ul>-->
+
+
+
